@@ -6,6 +6,10 @@
 
 [node name="World" type="Node2D"]
 
+[node name="Bush" type="Sprite" parent="."]
+position = Vector2( 18.7015, 19.4199 )
+texture = ExtResource( 1 )
+
 [node name="P1" type="KinematicBody2D" parent="."]
 position = Vector2( 94.4331, 28.0601 )
 script = ExtResource( 3 )
@@ -16,7 +20,3 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="P1"]
 texture = ExtResource( 4 )
 hframes = 60
-
-[node name="Bush" type="Sprite" parent="."]
-position = Vector2( 18.7015, 19.4199 )
-texture = ExtResource( 1 )

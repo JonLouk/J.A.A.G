@@ -17,7 +17,8 @@ func _physics_process(delta):
 		velocity = velocity.clamped(MAX_SPEED * delta)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION)
-	#print (velocity)
+#	print (velocity)
+#	geia soy apo to  pisi toy thanou
 	move_and_collide(velocity)
 
 
