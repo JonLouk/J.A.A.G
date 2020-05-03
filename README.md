@@ -2,12 +2,13 @@
 #### (Just Another Adventure Game)
 
 ## Features that we have implemented
-- [X] Move and slide
-- [X] Collisions
+- Move and slide
+- Collisions
 
 ## To Do 
 - [ ] AI enemies
 - [ ] Life Bar
+- [ ] Animate character and enemies
 - [ ] Main Menu
 - [ ] Pause Menu
 - [ ] Multiple Levels
