@@ -1,10 +1,11 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
+[ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -508,11 +509,24 @@ tile_data = PoolIntArray( -65532, 0, 196608, -65531, 0, 6, -65530, 0, 1, -65529,
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 120, 96 )
 
-[node name="Bush" parent="YSort" instance=ExtResource( 2 )]
+[node name="Bushes" type="YSort" parent="YSort"]
+
+[node name="Bush" parent="YSort/Bushes" instance=ExtResource( 2 )]
 position = Vector2( 173.882, 126.928 )
 
-[node name="Bush2" parent="YSort" instance=ExtResource( 2 )]
+[node name="Bush2" parent="YSort/Bushes" instance=ExtResource( 2 )]
 position = Vector2( 192.277, 59.7852 )
 
-[node name="Bush3" parent="YSort" instance=ExtResource( 2 )]
+[node name="Bush3" parent="YSort/Bushes" instance=ExtResource( 2 )]
 position = Vector2( 40.9766, 42.7213 )
+
+[node name="Grass" type="YSort" parent="YSort"]
+
+[node name="Grass" parent="YSort/Grass" instance=ExtResource( 6 )]
+position = Vector2( 5, -2.10155 )
+
+[node name="Grass" parent="YSort/Grass/Grass" instance=ExtResource( 6 )]
+position = Vector2( 1, 17 )
+
+[node name="Grass" parent="YSort/Grass/Grass/Grass" instance=ExtResource( 6 )]
+position = Vector2( -0.414213, 17.2929 )
