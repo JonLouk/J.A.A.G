@@ -5,15 +5,17 @@
 
 ### Move Character
 
-- wasd or arrows
+![WASD](READMEimg/wasd.png)
 
 ### Attack 
 
-- enter
+![ENTER](READMEimg/enter.png)
 
 ## Features that we have implemented
 - Move and slide
 - Collisions
+- Attack
+- Effects on attack
 
 ## To Do 
 - [ ] AI enemies
