@@ -5,7 +5,7 @@
 
 ### Move Character
 
-- w a s d or arrows
+- wasd or arrows
 
 ### Attack 
 
