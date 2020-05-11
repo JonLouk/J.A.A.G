@@ -20,7 +20,7 @@
 ## To Do 
 - [ ] AI enemies
 - [ ] Life Bar
-- [ ] Animate character and enemies
+- [X] Animate character and enemies
 - [ ] Main Menu
 - [ ] Pause Menu
 - [ ] Multiple Levels
