@@ -13,7 +13,7 @@ enum {
 
 var state = MOVE
 var velocity = Vector2.ZERO
-var roll_vector = Vector2.DOWN
+var roll_vector = Vector2.LEFT
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree =$AnimationTree
@@ -66,13 +66,14 @@ func roll_state():
 func attack_state():
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
+
 func move():
 		#print (velocity)
 	velocity = move_and_slide(velocity)
 
 func roll_animation_finished():
-	velocity = velocity * 0.8
-	state  = ROLL
+	velocity = velocity * 0.65
+	state  = MOVE
 
 func attack_animation_finished():
 	state = MOVE 
