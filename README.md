@@ -24,3 +24,7 @@
 - [ ] Main Menu
 - [ ] Pause Menu
 - [ ] Multiple Levels
+
+## Known Bugs
+
+- [ ] When the game starts the roll direction is wrong
