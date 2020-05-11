@@ -27,4 +27,4 @@
 
 ## Known Bugs
 
-- [ ] When the game starts the roll direction is wrong
+- [X] When the game starts the roll direction is wrong
