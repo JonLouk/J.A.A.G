@@ -28,3 +28,4 @@
 ## Known Bugs
 
 - [X] When the game starts the roll direction is wrong
+- [ ] Bat doesn't stop moving.
