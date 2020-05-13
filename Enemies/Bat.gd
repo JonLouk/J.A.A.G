@@ -30,11 +30,11 @@ func _physics_process(delta):
 		IDLE:
 			velocity = velocity.move_toward(Vector2.ZERO, FRICTION* delta)
 			seek_player()
-			print("IDLE")
+			# print("IDLE")
 		
 		WANDER:
 			pass
-			print("WANDER")
+			# print("WANDER")
 		
 		CHASE:
 			var player = PlayerDetectionZone.player
@@ -44,7 +44,7 @@ func _physics_process(delta):
 			else:
 				state = IDLE
 			sprite.flip_h = velocity.x < 0
-			print("CHASE")
+			# print("CHASE")
 	velocity = move_and_slide(velocity)
 
 func seek_player():
