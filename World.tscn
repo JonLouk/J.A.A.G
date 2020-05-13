@@ -519,6 +519,9 @@ smoothing_enabled = true
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 113.754, 36.6625 )
 
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
+
 [node name="Bushes" type="YSort" parent="YSort"]
 
 [node name="Bush" parent="YSort/Bushes" instance=ExtResource( 2 )]
