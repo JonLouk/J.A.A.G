@@ -11,6 +11,10 @@
 
 ![ENTER](READMEimg/enter.png)
 
+### Roll
+
+![SPACE](READMEimg/space.png)
+
 ## Features that we have implemented
 - Move and slide
 - Collisions
@@ -18,8 +22,8 @@
 - Effects on attack
 
 ## To Do 
-- [ ] AI enemies
-- [ ] Life Bar
+- [X] AI enemies
+- [X] Life Bar
 - [X] Animate character and enemies
 - [ ] Main Menu
 - [ ] Pause Menu
