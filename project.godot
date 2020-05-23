@@ -16,12 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="J.A.A.G"
-run/main_scene="res://World.tscn"
+run/main_scene="res://Levels/World.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-PlayerStats="*res://Player/PlayerStats.tscn"
+PlayerStats="*res://Levels/Player/PlayerStats.tscn"
 
 [display]
 
@@ -108,4 +108,4 @@ roll={
 [rendering]
 
 quality/2d/use_pixel_snap=true
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Levels/default_env.tres"
