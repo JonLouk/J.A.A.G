@@ -17,6 +17,7 @@ _global_script_class_icons={
 
 config/name="J.A.A.G"
 run/main_scene="res://Main_Menu/Main_menu.tscn"
+boot_splash/image="res://Main_Menu/Backround.png"
 config/icon="res://icon.png"
 
 [autoload]
