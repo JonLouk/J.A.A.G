@@ -14,12 +14,7 @@
 <<<<<<< HEAD
 ### Roll Movement  
 
-![ENTER](READMEimg/space.png)
-=======
-### Roll
-
 ![SPACE](READMEimg/space.png)
->>>>>>> 7077253d0c2af857860e9f071bed5e1e860a4da8
 
 ## Features that we have implemented
 - Move and slide
@@ -31,7 +26,7 @@
 - [X] AI enemies
 - [X] Life Bar
 - [X] Animate character and enemies
-- [ ] Main Menu
+- [X] Main Menu
 - [ ] Pause Menu
 - [ ] Multiple Levels
 
