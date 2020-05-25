@@ -11,7 +11,6 @@
 
 ![ENTER](READMEimg/enter.png)
 
-<<<<<<< HEAD
 ### Roll Movement  
 
 ![SPACE](READMEimg/space.png)
