@@ -8,7 +8,7 @@
 [ext_resource path="res://Main_Menu/Fonts/8bitlim.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Main_Menu/Fade_In/FadeIn.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Main_Menu/Main_menu.gd" type="Script" id=8]
-[ext_resource path="res://Main_Menu/image.png" type="Texture" id=9]
+[ext_resource path="res://Main_Menu/Backround.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 13
@@ -23,10 +23,6 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -249.303
-margin_top = -221.243
-margin_right = 450.697
-margin_bottom = 178.757
 texture = ExtResource( 9 )
 stretch_mode = 5
 __meta__ = {
@@ -55,7 +51,7 @@ margin_bottom = 163.0
 size_flags_vertical = 3
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
-margin_right = 100.0
+margin_right = 108.0
 margin_bottom = 123.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -64,26 +60,31 @@ alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_top = 18.0
+margin_right = 108.0
 margin_bottom = 38.0
 
 [node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_top = 51.0
+margin_right = 108.0
 margin_bottom = 71.0
 
 [node name="CreditsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
 margin_top = 84.0
+margin_right = 108.0
 margin_bottom = 104.0
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
-margin_left = 104.0
+margin_left = 112.0
 margin_right = 221.0
 margin_bottom = 123.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Character" type="TextureRect" parent="Menu/CenterRow/CenterContainer"]
+visible = false
+margin_left = -4.0
 margin_top = 1.0
-margin_right = 117.0
+margin_right = 113.0
 margin_bottom = 121.0
 texture = ExtResource( 5 )
 stretch_mode = 1
