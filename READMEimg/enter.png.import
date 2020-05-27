@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enter.png-5b4776d08a71174949bbaa49da43a6e9.stex"
+path="res://.import/enter.png-62d73475895637a77c2c45c0eefdcd2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/READMEimg/enter.png"
-dest_files=[ "res://.import/enter.png-5b4776d08a71174949bbaa49da43a6e9.stex" ]
+source_file="res://READMEimg/enter.png"
+dest_files=[ "res://.import/enter.png-62d73475895637a77c2c45c0eefdcd2b.stex" ]
 
 [params]
 

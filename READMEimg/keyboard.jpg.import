@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/keyboard.jpg-245ca648eece93727b9d864bd4f094ed.stex"
+path="res://.import/keyboard.jpg-954fcf244c935a828d6517e4674bd93b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/READMEimg/keyboard.jpg"
-dest_files=[ "res://.import/keyboard.jpg-245ca648eece93727b9d864bd4f094ed.stex" ]
+source_file="res://READMEimg/keyboard.jpg"
+dest_files=[ "res://.import/keyboard.jpg-954fcf244c935a828d6517e4674bd93b.stex" ]
 
 [params]
 

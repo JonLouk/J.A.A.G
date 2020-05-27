@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wasd.png-cb1031694d0c56000cdbb9ab0c794b4e.stex"
+path="res://.import/wasd.png-70eac46cbc14bed7b87da23d7c35748a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/READMEimg/wasd.png"
-dest_files=[ "res://.import/wasd.png-cb1031694d0c56000cdbb9ab0c794b4e.stex" ]
+source_file="res://READMEimg/wasd.png"
+dest_files=[ "res://.import/wasd.png-70eac46cbc14bed7b87da23d7c35748a.stex" ]
 
 [params]
 
