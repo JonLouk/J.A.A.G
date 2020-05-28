@@ -1,7 +1,7 @@
 extends Control
 
-var hearts = 4 setget set_hearts
-var max_hearts = 4 setget set_max_hearts
+export var hearts = 4 setget set_hearts
+export var max_hearts = 4 setget set_max_hearts
 
 onready var heartUIFull = $HeartUIFull
 onready var heartUIEmpty = $HeartUIEmpty
@@ -17,10 +17,17 @@ func set_max_hearts(value):
 	if heartUIEmpty != null:
 		heartUIEmpty.rect_size.x = max_hearts * 15
 
-func _ready():
+func init_hearts():
 	self.max_hearts = PlayerStats.max_health
 	self.hearts = PlayerStats.health
 	# warning-ignore:return_value_discarded
 	PlayerStats.connect("health_changed", self, "set_hearts")
 	# warning-ignore:return_value_discarded
 	PlayerStats.connect("max_health_changed", self, "set_max_hearts")
+
+func reset():
+	hearts = 4
+	print(hearts)
+
+func _ready():
+	init_hearts()

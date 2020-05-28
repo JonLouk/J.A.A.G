@@ -1,5 +1,7 @@
 extends Control
 
+# onready var hearts = get_node("res://Levels/UI/HealthUI.gd").new()
+
 var new_pause_state
 
 func _input(event):
@@ -17,4 +19,5 @@ func _on_MainMenu_pressed():
 func _on_Retry_pressed():
 	get_tree().paused = not get_tree().paused
 	visible = new_pause_state
-	get_tree().change_scene("res://Levels/World.tscn")
+	# hearts.reset()
+	get_tree().reload_current_scene()
