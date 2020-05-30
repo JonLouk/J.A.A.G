@@ -125,7 +125,7 @@ size_flags_vertical = 3
 position = Vector2( 80.0461, 87.0742 )
 scale = Vector2( 1.2747, 1.2747 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Verison" type="Label" parent="Menu"]
@@ -133,7 +133,7 @@ margin_top = 163.0
 margin_right = 221.0
 margin_bottom = 178.0
 custom_fonts/font = SubResource( 6 )
-text = "Version 1.2 Beta"
+text = "Version 1.4 Beta"
 align = 1
 
 [node name="FadeIn" parent="." instance=ExtResource( 7 )]

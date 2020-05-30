@@ -688,7 +688,7 @@ flat = true
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 50 )
-text = "Return to Game"
+text = "Resume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
