@@ -17,27 +17,27 @@ shader = ExtResource( 10 )
 shader_param/color = Vector3( 0.35, 0.35, 0.35 )
 shader_param/OCTAVES = 10
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 120, 64 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 5 )
 region = Rect2( 120, 0, 120, 64 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 5 )
 region = Rect2( 240, 0, 120, 64 )
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=6]
 size = 13
 font_data = ExtResource( 6 )
 
@@ -124,14 +124,15 @@ size_flags_vertical = 3
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Menu/CenterRow/CenterContainer"]
 position = Vector2( 80.0461, 87.0742 )
 scale = Vector2( 1.2747, 1.2747 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
+frame = 1
 playing = true
 
 [node name="Verison" type="Label" parent="Menu"]
 margin_top = 163.0
 margin_right = 221.0
 margin_bottom = 178.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 6 )
 text = "Version 1.2 Beta"
 align = 1
 

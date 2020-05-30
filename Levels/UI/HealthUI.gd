@@ -17,7 +17,7 @@ func set_max_hearts(value):
 	if heartUIEmpty != null:
 		heartUIEmpty.rect_size.x = max_hearts * 15
 
-func init_hearts():
+func reset():
 	self.max_hearts = PlayerStats.max_health
 	self.hearts = PlayerStats.health
 	# warning-ignore:return_value_discarded
@@ -25,9 +25,5 @@ func init_hearts():
 	# warning-ignore:return_value_discarded
 	PlayerStats.connect("max_health_changed", self, "set_max_hearts")
 
-func reset():
-	hearts = 4
-	print(hearts)
-
 func _ready():
-	init_hearts()
+	reset()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Levels/World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Player/Player.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://Levels/Pause Menu/PauseIcon.png" type="Texture" id=12]
 [ext_resource path="res://Levels/Pause Menu/UI board Large  parchment.png" type="Texture" id=13]
 [ext_resource path="res://Main_Menu/Fonts/8bitlim.ttf" type="DynamicFontData" id=14]
-[ext_resource path="res://Levels/Pause Menu/Buttons/MainMenuBTN.gd" type="Script" id=15]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -634,10 +633,10 @@ texture = ExtResource( 12 )
 expand = true
 stretch_mode = 5
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
 layer = 2
 
-[node name="Pause" type="Control" parent="CanvasLayer"]
+[node name="Pause" type="Control" parent="UI/CanvasLayer"]
 pause_mode = 2
 visible = false
 margin_right = 320.0
@@ -647,7 +646,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Backround" type="ColorRect" parent="CanvasLayer/Pause"]
+[node name="Backround" type="ColorRect" parent="UI/CanvasLayer/Pause"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.352941 )
@@ -655,7 +654,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BoardBackeound" type="TextureRect" parent="CanvasLayer/Pause"]
+[node name="BoardBackeound" type="TextureRect" parent="UI/CanvasLayer/Pause"]
 margin_left = 59.8574
 margin_top = 15.4045
 margin_right = 260.857
@@ -666,7 +665,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Buttons" type="VBoxContainer" parent="CanvasLayer/Pause"]
+[node name="Buttons" type="VBoxContainer" parent="UI/CanvasLayer/Pause"]
 margin_left = 73.0
 margin_top = 26.0
 margin_right = 252.0
@@ -679,13 +678,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ReturnToGame" type="Button" parent="CanvasLayer/Pause/Buttons"]
+[node name="ReturnToGame" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
 margin_top = 24.0
 margin_right = 179.0
 margin_bottom = 44.0
 flat = true
 
-[node name="Label" type="Label" parent="CanvasLayer/Pause/Buttons/ReturnToGame"]
+[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/ReturnToGame"]
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 50 )
@@ -694,13 +693,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Retry" type="Button" parent="CanvasLayer/Pause/Buttons"]
+[node name="Retry" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
 margin_top = 54.0
 margin_right = 179.0
 margin_bottom = 74.0
 flat = true
 
-[node name="Label" type="Label" parent="CanvasLayer/Pause/Buttons/Retry"]
+[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/Retry"]
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 50 )
@@ -709,14 +708,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MainMenu" type="Button" parent="CanvasLayer/Pause/Buttons"]
+[node name="MainMenu" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
 margin_top = 84.0
 margin_right = 179.0
 margin_bottom = 104.0
 flat = true
-script = ExtResource( 15 )
 
-[node name="Label" type="Label" parent="CanvasLayer/Pause/Buttons/MainMenu"]
+[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/MainMenu"]
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 50 )
@@ -724,7 +722,7 @@ text = "Main Menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="CanvasLayer/Pause/Buttons/Retry" to="CanvasLayer/Pause" method="_on_Retry_pressed"]
-[connection signal="pressed" from="CanvasLayer/Pause/Buttons/MainMenu" to="CanvasLayer/Pause" method="_on_MainMenu_pressed"]
+[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/Retry" to="UI/CanvasLayer/Pause" method="_on_Retry_pressed"]
+[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/MainMenu" to="UI/CanvasLayer/Pause" method="_on_MainMenu_pressed"]
 
 [editable path="Camera2D"]
