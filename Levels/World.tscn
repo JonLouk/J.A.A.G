@@ -722,6 +722,7 @@ text = "Main Menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/ReturnToGame" to="UI/CanvasLayer/Pause" method="_on_ReturnToGame_pressed"]
 [connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/Retry" to="UI/CanvasLayer/Pause" method="_on_Retry_pressed"]
 [connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/MainMenu" to="UI/CanvasLayer/Pause" method="_on_MainMenu_pressed"]
 
