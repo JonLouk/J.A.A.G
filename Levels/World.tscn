@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://Levels/World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Player/Player.tscn" type="PackedScene" id=2]
@@ -10,10 +10,8 @@
 [ext_resource path="res://Levels/UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Levels/World/Tree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Levels/Camera2D.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Levels/Pause Menu/Pause.gd" type="Script" id=11]
+[ext_resource path="res://Levels/Pause.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Levels/Pause Menu/PauseIcon.png" type="Texture" id=12]
-[ext_resource path="res://Levels/Pause Menu/UI board Large  parchment.png" type="Texture" id=13]
-[ext_resource path="res://Main_Menu/Fonts/8bitlim.ttf" type="DynamicFontData" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -489,12 +487,6 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
-[sub_resource type="DynamicFont" id=50]
-size = 20
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 14 )
-
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
@@ -633,97 +625,12 @@ texture = ExtResource( 12 )
 expand = true
 stretch_mode = 5
 
-[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+[node name="PauseMenu" type="CanvasLayer" parent="UI"]
 layer = 2
 
-[node name="Pause" type="Control" parent="UI/CanvasLayer"]
-pause_mode = 2
+[node name="Pause" parent="UI/PauseMenu" instance=ExtResource( 11 )]
 visible = false
-margin_right = 320.0
-margin_bottom = 180.0
-script = ExtResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Backround" type="ColorRect" parent="UI/CanvasLayer/Pause"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0, 0, 0, 0.352941 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BoardBackeound" type="TextureRect" parent="UI/CanvasLayer/Pause"]
-margin_left = 59.8574
-margin_top = 15.4045
-margin_right = 260.857
-margin_bottom = 166.404
-texture = ExtResource( 13 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Buttons" type="VBoxContainer" parent="UI/CanvasLayer/Pause"]
-margin_left = 73.0
-margin_top = 26.0
-margin_right = 252.0
-margin_bottom = 155.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_constants/separation = 10
-alignment = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ReturnToGame" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
-margin_top = 24.0
-margin_right = 179.0
-margin_bottom = 44.0
-flat = true
-
-[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/ReturnToGame"]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 50 )
-text = "Resume"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Retry" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
-margin_top = 54.0
-margin_right = 179.0
-margin_bottom = 74.0
-flat = true
-
-[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/Retry"]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 50 )
-text = "Retry"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="MainMenu" type="Button" parent="UI/CanvasLayer/Pause/Buttons"]
-margin_top = 84.0
-margin_right = 179.0
-margin_bottom = 104.0
-flat = true
-
-[node name="Label" type="Label" parent="UI/CanvasLayer/Pause/Buttons/MainMenu"]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 50 )
-text = "Main Menu"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/ReturnToGame" to="UI/CanvasLayer/Pause" method="_on_ReturnToGame_pressed"]
-[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/Retry" to="UI/CanvasLayer/Pause" method="_on_Retry_pressed"]
-[connection signal="pressed" from="UI/CanvasLayer/Pause/Buttons/MainMenu" to="UI/CanvasLayer/Pause" method="_on_MainMenu_pressed"]
 
 [editable path="Camera2D"]
+
+[editable path="UI/PauseMenu/Pause"]

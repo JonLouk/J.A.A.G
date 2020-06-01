@@ -27,7 +27,7 @@ onready var blinkAnimationPlayer = $BlinkAnimationPlayer
 
 func _ready():
 	randomize()
-	stats.connect("no_health", self, "queue_free")
+	stats.connect("no_health", self, "death_scene")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
 
@@ -100,3 +100,8 @@ func _on_Hurtbox_invincibility_started():
 
 func _on_Hurtbox_invincibility_ended():
 	blinkAnimationPlayer.play("Stop")
+
+func death_scene():
+	stats.health = stats.max_health
+	get_tree().change_scene("res://Levels/DeathScene/Death_Scene.tscn")
+	

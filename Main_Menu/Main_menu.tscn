@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Main_Menu/icon.png" type="Texture" id=1]
 [ext_resource path="res://Main_Menu/Buttons/CreditsButton.tscn" type="PackedScene" id=2]
@@ -9,13 +9,7 @@
 [ext_resource path="res://Main_Menu/Fade_In/FadeIn.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Main_Menu/Main_menu.gd" type="Script" id=8]
 [ext_resource path="res://Main_Menu/Backround.png" type="Texture" id=9]
-[ext_resource path="res://Shaders/fog.shader" type="Shader" id=10]
-
-[sub_resource type="ShaderMaterial" id=1]
-render_priority = -1
-shader = ExtResource( 10 )
-shader_param/color = Vector3( 0.35, 0.35, 0.35 )
-shader_param/OCTAVES = 10
+[ext_resource path="res://Shaders/Fog.tscn" type="PackedScene" id=10]
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 5 )
@@ -58,17 +52,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-material = SubResource( 1 )
-margin_right = 321.0
-margin_bottom = 185.0
-rect_scale = Vector2( 1, 0.998 )
-texture = ExtResource( 9 )
-expand = true
-stretch_mode = 5
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="TextureRect" parent="." instance=ExtResource( 10 )]
 
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = 53.0
@@ -125,7 +109,6 @@ size_flags_vertical = 3
 position = Vector2( 80.0461, 87.0742 )
 scale = Vector2( 1.2747, 1.2747 )
 frames = SubResource( 5 )
-frame = 2
 playing = true
 
 [node name="Verison" type="Label" parent="Menu"]

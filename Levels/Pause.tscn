@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Levels/Pause Menu/Pause.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Pause Menu/UI board Large  parchment.png" type="Texture" id=2]
+[ext_resource path="res://Main_Menu/Fonts/8bitlim.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Pause" type="Control"]
+pause_mode = 2
+margin_right = 320.0
+margin_bottom = 180.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Backround" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BoardBackround" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.5
+margin_top = -75.4998
+margin_right = 100.5
+margin_bottom = 75.4998
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="VBoxContainer" parent="BoardBackround"]
+margin_left = 13.4998
+margin_top = 11.4998
+margin_right = 192.5
+margin_bottom = 140.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnToGame" type="Button" parent="BoardBackround/Buttons"]
+margin_top = 24.0
+margin_right = 179.0
+margin_bottom = 44.0
+flat = true
+
+[node name="Label" type="Label" parent="BoardBackround/Buttons/ReturnToGame"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retry" type="Button" parent="BoardBackround/Buttons"]
+margin_top = 54.0
+margin_right = 179.0
+margin_bottom = 74.0
+flat = true
+
+[node name="Label" type="Label" parent="BoardBackround/Buttons/Retry"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+text = "Retry"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" type="Button" parent="BoardBackround/Buttons"]
+margin_top = 84.0
+margin_right = 179.0
+margin_bottom = 104.0
+flat = true
+
+[node name="Label" type="Label" parent="BoardBackround/Buttons/MainMenu"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+text = "Main Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BoardBackround/Buttons/ReturnToGame" to="." method="_on_ReturnToGame_pressed"]
+[connection signal="pressed" from="BoardBackround/Buttons/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="BoardBackround/Buttons/MainMenu" to="." method="_on_MainMenu_pressed"]

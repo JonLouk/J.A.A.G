@@ -1,0 +1,92 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Levels/DeathScene/Death_Scene.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Pause Menu/UI board Large  parchment.png" type="Texture" id=2]
+[ext_resource path="res://Main_Menu/Fonts/8bitlim.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Shaders/Fog.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main_Menu/Backround.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 3 )
+
+[node name="Death Scene" type="Control"]
+margin_right = 321.0
+margin_bottom = 181.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackRound" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fog" parent="." instance=ExtResource( 4 )]
+
+[node name="BoardBackround" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -97.0
+margin_top = -61.0
+margin_right = 97.0
+margin_bottom = 61.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoardBackround"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -88.0
+margin_top = -26.0
+margin_right = 89.0
+margin_bottom = 54.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOver" type="Label" parent="BoardBackround/VBoxContainer"]
+margin_right = 177.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 1 )
+text = "Game Over"
+align = 1
+
+[node name="Back_To_Main_Menu_Button" type="Button" parent="BoardBackround/VBoxContainer"]
+margin_top = 36.0
+margin_right = 177.0
+margin_bottom = 56.0
+flat = true
+
+[node name="Label" type="Label" parent="BoardBackround/VBoxContainer/Back_To_Main_Menu_Button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -66.5
+margin_top = -9.0
+margin_right = 66.5
+margin_bottom = 9.0
+custom_fonts/font = SubResource( 2 )
+text = "Back To Main Menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BoardBackround/VBoxContainer/Back_To_Main_Menu_Button" to="." method="_on_Back_To_Main_Menu_Button_pressed"]
