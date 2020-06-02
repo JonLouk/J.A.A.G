@@ -43,22 +43,26 @@ __meta__ = {
 }
 
 [node name="Buttons" type="VBoxContainer" parent="BoardBackround"]
-margin_left = 13.4998
-margin_top = 11.4998
-margin_right = 192.5
-margin_bottom = 140.5
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -44.5
+margin_top = -63.4998
+margin_right = 45.5
+margin_bottom = 64.5002
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 10
+custom_constants/separation = 15
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ReturnToGame" type="Button" parent="BoardBackround/Buttons"]
-margin_top = 24.0
-margin_right = 179.0
-margin_bottom = 44.0
+margin_top = 19.0
+margin_right = 90.0
+margin_bottom = 39.0
 flat = true
 
 [node name="Label" type="Label" parent="BoardBackround/Buttons/ReturnToGame"]
@@ -72,7 +76,7 @@ __meta__ = {
 
 [node name="Retry" type="Button" parent="BoardBackround/Buttons"]
 margin_top = 54.0
-margin_right = 179.0
+margin_right = 90.0
 margin_bottom = 74.0
 flat = true
 
@@ -86,9 +90,9 @@ __meta__ = {
 }
 
 [node name="MainMenu" type="Button" parent="BoardBackround/Buttons"]
-margin_top = 84.0
-margin_right = 179.0
-margin_bottom = 104.0
+margin_top = 89.0
+margin_right = 90.0
+margin_bottom = 109.0
 flat = true
 
 [node name="Label" type="Label" parent="BoardBackround/Buttons/MainMenu"]
