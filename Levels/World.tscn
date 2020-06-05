@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Levels/World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,19 +6,10 @@
 [ext_resource path="res://Levels/World/DirtPathTileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/World/DirtCliffTileMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Levels/World/Grass.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Levels/Enemies/Bat1/Bat.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Levels/WhiteColor.shader" type="Shader" id=8]
 [ext_resource path="res://Levels/World/Tree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Levels/Camera2D.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Levels/UI/UI.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Levels/Magician/Magician.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Levels/Enemies/Bat2/Bat2.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Levels/Enemies/Bloob/Bloob.tscn" type="PackedScene" id=14]
-
-[sub_resource type="ShaderMaterial" id=1]
-resource_local_to_scene = true
-shader = ExtResource( 8 )
-shader_param/active = false
+[ext_resource path="res://Levels/Enemies/BloodMinion/BloobMinion.tscn" type="PackedScene" id=15]
 
 [node name="World" type="Node2D"]
 
@@ -115,36 +106,12 @@ position = Vector2( 232, 32 )
 [node name="Tree2" parent="YSort/Trees" instance=ExtResource( 9 )]
 position = Vector2( 104, 160 )
 
-[node name="Bat" parent="YSort" instance=ExtResource( 7 )]
-visible = false
-position = Vector2( 285, 77 )
-
-[node name="Bat2" parent="YSort" instance=ExtResource( 7 )]
-visible = false
-position = Vector2( 216, 160 )
-
-[node name="Bat3" parent="YSort" instance=ExtResource( 7 )]
-visible = false
-position = Vector2( 40, 96 )
-
-[node name="AnimatedSprite" parent="YSort/Bat3" index="0"]
-material = SubResource( 1 )
-
-[node name="Bat4" parent="YSort" instance=ExtResource( 13 )]
-visible = false
-position = Vector2( 169.899, 88.846 )
-
-[node name="Bloob" parent="YSort" instance=ExtResource( 14 )]
-position = Vector2( 151.522, -42.001 )
-
-[node name="KinematicBody2D" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 316.03, -45.6126 )
+[node name="BloobMinion" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( 29.4038, -49.9864 )
 
 [node name="UI" parent="." instance=ExtResource( 11 )]
 
 [editable path="Camera2D"]
-
-[editable path="YSort/Bat3"]
 
 [editable path="UI"]
 
