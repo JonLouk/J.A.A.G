@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Levels/Enemies/PlayerDetectionZone.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Enemies/Bat1/PlayerDetectionZone.gd" type="Script" id=1]
+
 
 
 [node name="PlayerDetectionZone" type="Area2D"]

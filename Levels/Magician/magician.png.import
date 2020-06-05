@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magician (1).png-ded3a0cd9d6c7ce51f35e43bdec7b40a.stex"
+path="res://.import/magician.png-c35c546871382ee3022cde433ea6299a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/Magician/magician (1).png"
-dest_files=[ "res://.import/magician (1).png-ded3a0cd9d6c7ce51f35e43bdec7b40a.stex" ]
+source_file="res://Levels/Magician/magician.png"
+dest_files=[ "res://.import/magician.png-c35c546871382ee3022cde433ea6299a.stex" ]
 
 [params]
 

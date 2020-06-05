@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Levels/Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://Levels/Magician/magiciananimate.png" type="Texture" id=2]
@@ -23,13 +23,24 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 3.64566
+height = 4.571
+
 [node name="KinematicBody2D" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -7.77817, 28.6378 )
+position = Vector2( 5.31545, 0.0258064 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 1.06066, -2.12132 )
+position = Vector2( 8.52888, -15.6999 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 4 )
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 5.30934, -2.35847 )
+rotation = -1.5708
+shape = SubResource( 5 )
