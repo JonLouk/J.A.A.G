@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GrassBackground3.0.png-cf2e5271bbb76f1d79430990600a78ed.stex"
+path="res://.import/CliffTileset3.0.png-1c382339f1daa1aa3487555c8d2139e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/World/GrassBackground3.0.png"
-dest_files=[ "res://.import/GrassBackground3.0.png-cf2e5271bbb76f1d79430990600a78ed.stex" ]
+source_file="res://Levels/World/CliffTileset3.0.png"
+dest_files=[ "res://.import/CliffTileset3.0.png-1c382339f1daa1aa3487555c8d2139e2.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false

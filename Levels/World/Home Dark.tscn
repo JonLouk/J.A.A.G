@@ -4,7 +4,7 @@
 [ext_resource path="res://Levels/World/housedark.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 108.421, 118.846 )
+extents = Vector2( 86.381, 101.312 )
 
 [node name="Home Dark" type="StaticBody2D"]
 scale = Vector2( 0.3, 0.3 )
@@ -18,4 +18,5 @@ texture = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 7.433 )
 shape = SubResource( 1 )
