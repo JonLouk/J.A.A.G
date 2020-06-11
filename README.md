@@ -3,7 +3,7 @@
 
 ## Game Controls
 
-![Keyboard](READMEimg/keyboard.png)
+![Keyboard](READMEimg/Keyboard.png)
 
 - ![#ae0000](https://placehold.it/12/ae0000?text=+) Move your character!
 - ![#ff8300](https://placehold.it/12/ff8300?text=+) Roll your character!
