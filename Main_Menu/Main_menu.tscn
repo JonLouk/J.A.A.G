@@ -115,7 +115,7 @@ size_flags_vertical = 3
 position = Vector2( 80.0461, 87.0742 )
 scale = Vector2( 1.2747, 1.2747 )
 frames = SubResource( 4 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Verison" type="Label" parent="Menu"]

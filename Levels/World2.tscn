@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://Levels/UI/UI.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Player/Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Levels/World/CliffTileset3.0.png" type="Texture" id=14]
 [ext_resource path="res://Levels/Enemies/Bloob/Bloob.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Levels/Enemies/Bat2/Bat2.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Levels/gotoYouWinScene.gd" type="Script" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -474,6 +475,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=50]
 
 [node name="World2" type="Node2D"]
 
@@ -2865,5 +2868,12 @@ position = Vector2( 135.19, 166.411 )
 
 [node name="BloobMinion2" parent="YSort/YSort2/YSort3" instance=ExtResource( 6 )]
 position = Vector2( 117.071, -127.764 )
+
+[node name="Area2D" type="Area2D" parent="YSort"]
+position = Vector2( -52.6689, -237.01 )
+script = ExtResource( 17 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Area2D"]
+shape = SubResource( 50 )
 
 [node name="UI" parent="." instance=ExtResource( 1 )]
