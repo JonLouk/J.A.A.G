@@ -8,6 +8,7 @@ radius = 12.2872
 height = 6.77934
 
 [node name="DarkTree" type="StaticBody2D"]
+show_behind_parent = true
 
 [node name="Shadow Sprite" type="Sprite" parent="."]
 position = Vector2( -5.36442e-07, 16.0415 )

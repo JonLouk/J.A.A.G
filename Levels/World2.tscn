@@ -507,63 +507,11 @@ position = Vector2( -209.636, -303.14 )
 [node name="BottomRight" type="Position2D" parent="Camera2D/Limits"]
 position = Vector2( 661.675, 399.487 )
 
-[node name="YSort3" type="YSort" parent="."]
-
-[node name="Bat2" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 304.517, 123.73 )
-
-[node name="Bat7" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 276.805, 159.969 )
-
-[node name="Bat8" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 285.331, 270.817 )
-
-[node name="Bat3" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 404.586, 120.155 )
-
-[node name="Bat4" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 483.459, 30.6232 )
-
-[node name="Bat6" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( -132.602, 6.10871 )
-
-[node name="Bat5" parent="YSort3" instance=ExtResource( 16 )]
-position = Vector2( 507.974, 167.052 )
-
-[node name="Bloob" parent="YSort3" instance=ExtResource( 15 )]
-position = Vector2( 91.2755, 141.028 )
-
-[node name="Bloob3" parent="YSort3" instance=ExtResource( 15 )]
-position = Vector2( 310.482, -106.956 )
-
-[node name="Bloob5" parent="YSort3" instance=ExtResource( 15 )]
-position = Vector2( -32.7217, -66.4537 )
-
-[node name="Bloob4" parent="YSort3" instance=ExtResource( 15 )]
-position = Vector2( 36.9172, -253.336 )
-
-[node name="Bloob2" parent="YSort3" instance=ExtResource( 15 )]
-position = Vector2( 121.119, 303.037 )
-
-[node name="BloobMinion" parent="YSort3" instance=ExtResource( 6 )]
-position = Vector2( 392.06, -177.859 )
-
-[node name="BloobMinion3" parent="YSort3" instance=ExtResource( 6 )]
-position = Vector2( 575.386, 36.3771 )
-
-[node name="BloobMinion4" parent="YSort3" instance=ExtResource( 6 )]
-position = Vector2( 405.916, -23.3104 )
-
-[node name="BloobMinion5" parent="YSort3" instance=ExtResource( 6 )]
-position = Vector2( 135.19, 166.411 )
-
-[node name="BloobMinion2" parent="YSort3" instance=ExtResource( 6 )]
-position = Vector2( 117.071, -127.764 )
-
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 163.243, 92.9152 )
+collision_layer = 1
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
@@ -580,7 +528,7 @@ position = Vector2( -207.988, -111.477 )
 position = Vector2( 142.42, -187.746 )
 
 [node name="DarkTree121" parent="YSort2" instance=ExtResource( 8 )]
-position = Vector2( 63.9311, -120.571 )
+position = Vector2( 63.224, -102.893 )
 
 [node name="DarkTree118" parent="YSort2" instance=ExtResource( 8 )]
 position = Vector2( 77.3661, -204.01 )
@@ -844,7 +792,7 @@ position = Vector2( 229.629, 177.623 )
 position = Vector2( 246.066, 187.782 )
 
 [node name="Home Dark" parent="YSort2" instance=ExtResource( 13 )]
-position = Vector2( 291, 54 )
+position = Vector2( 291, 52.4737 )
 
 [node name="Home Dark5" parent="YSort2" instance=ExtResource( 13 )]
 position = Vector2( 422.089, 301.42 )
@@ -1601,9 +1549,6 @@ position = Vector2( 592.074, 285.596 )
 
 [node name="DarkTree90" parent="YSort2" instance=ExtResource( 8 )]
 position = Vector2( 565.908, 74.8217 )
-
-[node name="DarkTree123" parent="YSort2" instance=ExtResource( 8 )]
-position = Vector2( 497.908, -44.3102 )
 
 [node name="DarkTree151" parent="YSort2" instance=ExtResource( 8 )]
 position = Vector2( 610.766, 154.494 )
@@ -2677,7 +2622,13 @@ position = Vector2( 461.234, -81.164 )
 position = Vector2( 463.234, -96.164 )
 
 [node name="Grass89" parent="YSort2" instance=ExtResource( 11 )]
-position = Vector2( 500.234, -18.164 )
+position = Vector2( 498.82, -31.599 )
+
+[node name="Grass145" parent="YSort2" instance=ExtResource( 11 )]
+position = Vector2( 498.113, -17.4569 )
+
+[node name="Grass144" parent="YSort2" instance=ExtResource( 11 )]
+position = Vector2( 481.849, -33.0132 )
 
 [node name="Grass99" parent="YSort2" instance=ExtResource( 11 )]
 position = Vector2( 363.068, 111.189 )
@@ -2861,5 +2812,58 @@ position = Vector2( -25.144, -26.261 )
 
 [node name="Grass32" parent="YSort2" instance=ExtResource( 11 )]
 position = Vector2( -5.466, -26.261 )
+
+[node name="YSort3" type="YSort" parent="YSort2"]
+
+[node name="Bat2" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 304.517, 123.73 )
+
+[node name="Bat7" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 276.805, 159.969 )
+
+[node name="Bat8" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 285.331, 270.817 )
+
+[node name="Bat3" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 404.586, 120.155 )
+
+[node name="Bat4" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 483.459, 30.6232 )
+
+[node name="Bat6" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( -132.602, 6.10871 )
+
+[node name="Bat5" parent="YSort2/YSort3" instance=ExtResource( 16 )]
+position = Vector2( 507.974, 167.052 )
+
+[node name="Bloob" parent="YSort2/YSort3" instance=ExtResource( 15 )]
+position = Vector2( 91.2755, 141.028 )
+
+[node name="Bloob3" parent="YSort2/YSort3" instance=ExtResource( 15 )]
+position = Vector2( 310.482, -106.956 )
+
+[node name="Bloob5" parent="YSort2/YSort3" instance=ExtResource( 15 )]
+position = Vector2( -32.7217, -66.4537 )
+
+[node name="Bloob4" parent="YSort2/YSort3" instance=ExtResource( 15 )]
+position = Vector2( 36.9172, -253.336 )
+
+[node name="Bloob2" parent="YSort2/YSort3" instance=ExtResource( 15 )]
+position = Vector2( 121.119, 303.037 )
+
+[node name="BloobMinion" parent="YSort2/YSort3" instance=ExtResource( 6 )]
+position = Vector2( 392.06, -177.859 )
+
+[node name="BloobMinion3" parent="YSort2/YSort3" instance=ExtResource( 6 )]
+position = Vector2( 575.386, 36.3771 )
+
+[node name="BloobMinion4" parent="YSort2/YSort3" instance=ExtResource( 6 )]
+position = Vector2( 405.916, -23.3104 )
+
+[node name="BloobMinion5" parent="YSort2/YSort3" instance=ExtResource( 6 )]
+position = Vector2( 135.19, 166.411 )
+
+[node name="BloobMinion2" parent="YSort2/YSort3" instance=ExtResource( 6 )]
+position = Vector2( 117.071, -127.764 )
 
 [node name="UI" parent="." instance=ExtResource( 1 )]
