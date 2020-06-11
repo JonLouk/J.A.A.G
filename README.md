@@ -3,17 +3,12 @@
 
 ## Game Controls
 
-### Move Character
+![Keyboard](READMEimg/keyboard.png)
 
-![WASD](READMEimg/wasd.png)
-
-### Attack 
-
-![ENTER](READMEimg/enter.png)
-
-### Roll Movement  
-
-![SPACE](READMEimg/space.png)
+- ![#ae0000](https://placehold.it/12/ae0000?text=+) Move your character!
+- ![#ff8300](https://placehold.it/12/ff8300?text=+) Roll your character!
+- ![#67c800](https://placehold.it/12/67c800?text=+) Attack!
+- ![#1700ff](https://placehold.it/12/1700ff?text=+) Pause!
 
 ## Features that we have implemented
 - Move and slide
@@ -26,10 +21,11 @@
 - [X] Life Bar
 - [X] Animate character and enemies
 - [X] Main Menu
-- [ ] Pause Menu
-- [ ] Multiple Levels
+- [X] Pause Menu
+- [X] Multiple Levels
 
 ## Known Bugs
 
 - [X] When the game starts the roll direction is wrong
 - [X] Bat doesn't stop moving.
+- [ ] Sometimes the enemy does not have damage upon you
