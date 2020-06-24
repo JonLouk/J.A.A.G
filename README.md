@@ -1,5 +1,5 @@
 # J.A.A.G 
-#### (Just Another Adventure Game)
+#### (Just Another Adventure Game [not yet])
 
 ## Game Controls
 
